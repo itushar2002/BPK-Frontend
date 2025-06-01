@@ -45,7 +45,7 @@ const Nav = ({ containerStyles }) => {
         <div>Listing</div>
       </NavLink>
       <NavLink
-        to={"mailto:itusharjha2002@gmail.com"}
+        to={"mailto:bhopalpropertyking@gmail.com"}
         className={
           "flex items-center justify-center gap-x-1 rounded-full !px-2 !py-1 cursor-pointer"
         }
