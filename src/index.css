@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+}
+.active-link {
+  color: #fff;
+  background-color: #946b2d;
+}
+#hero {
+  background-image: url("./assets/hero-bg.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 655px;
+  width: 100%;
+}
+.xs {
+  height: 400px;
+}
+.text-with-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
