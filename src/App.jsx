@@ -8,7 +8,6 @@ import Bookings from "./pages/Bookings";
 import Favourite from "./pages/Favourite";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Preloader from "./components/PreLoader";
 import { Suspense } from "react";
 import Layout from "./components/Layout";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -66,19 +65,7 @@ const App = () => {
 
   return (
     <UserDetailContext.Provider value={{ userDetails, setUserDetails }}>
-      {/* Ensure Preloader is visible when loading */}
-      {/* <AnimatePresence mode="wait">
-        {loading && <Preloader key="preloader" />}
-      </AnimatePresence> */}
-
-      {/* Main Content */}
-      {/*  {!loading && (
-        <motion.div
-          className="will-change-transform"
-          initial={{ opacity: 0, y: 40 }} // Starting opacity and position
-          animate={{ opacity: 1, y: 0 }} // Ending opacity and position
-          transition={{ duration: 3, ease: "easeOut" }} // Smooth fade-in
-        > */}
+      
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
           <Suspense fallback={<div>Loading...</div>}>
@@ -99,8 +86,7 @@ const App = () => {
         <ToastContainer />
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
-      {/*  </motion.div>
-      )} */}
+      
     </UserDetailContext.Provider>
   );
 };
