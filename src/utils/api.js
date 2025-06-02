@@ -3,9 +3,8 @@ import dayjs from 'dayjs';
 import {toast} from 'react-toastify'
 
 export const api = axios.create({
-    baseURL: "https://bpk-backend-4otr.vercel.app/",
-  
-})
+  baseURL: "https://api.bhopalpropertyking.com/",
+});
 
 export const getAllProperties = async () => {
     try {
