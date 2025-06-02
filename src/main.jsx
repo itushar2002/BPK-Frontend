@@ -13,7 +13,7 @@ createRoot(document.getElementById("root")).render(
       domain="dev-0zoy7it3pf1rqnr4.us.auth0.com"
       clientId="HyJLSBEo7g3x2OfiCxWlzGaMCgLd0IDV"
       authorizationParams={{
-        redirect_uri: "https://bpk-frontend.vercel.app/",
+        redirect_uri: "https://www.bhopalpropertyking.com/",
         audience: "http://localhost:8000", // <-- move audience here!
         scope: "openid profile email",
       }}
