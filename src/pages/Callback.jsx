@@ -6,7 +6,7 @@ const Callback = () => {
 
   if (isLoading) return <div>Loading authentication...</div>;
   if (error) return <div>Authentication error: {error.message}</div>;
-  clg
+ 
 
   // Optionally, you can redirect or show a success message here
   return <div>Login successful! Redirecting...</div>;
