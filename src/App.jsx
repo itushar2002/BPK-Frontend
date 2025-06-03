@@ -16,6 +16,7 @@ import { ToastContainer } from "react-toastify";
 import Property from "./pages/Property";
 import UserDetailContext from "./context/userDetailContext.jsx";
 import AdminPanel from "./pages/AdminPanel.jsx";
+import Callback from "./pages/Callback";
 import { api } from "./utils/api";
 
 const App = () => {
@@ -65,7 +66,6 @@ const App = () => {
 
   return (
     <UserDetailContext.Provider value={{ userDetails, setUserDetails }}>
-      
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
           <Suspense fallback={<div>Loading...</div>}>
@@ -79,6 +79,7 @@ const App = () => {
                 <Route path="/bookings" element={<Bookings />} />
                 <Route path="/favourites" element={<Favourite />} />
                 <Route path="/admin" element={<AdminPanel />} />
+                <Route path="/callback" element={<Callback />} />
               </Route>
             </Routes>
           </Suspense>
@@ -86,7 +87,6 @@ const App = () => {
         <ToastContainer />
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
-      
     </UserDetailContext.Provider>
   );
 };
