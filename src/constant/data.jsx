@@ -194,7 +194,7 @@ export const FOOTER_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
   links: [
-    { label: "Contact Number", value: "+91 761010788" },
+    { label: "Contact Number", value: "+91 7610107878" },
     { label: "Email Address", value: "bhopalpropertyking@gmail.com" },
   ],
 };
